@@ -1,6 +1,106 @@
-# Getting Started with Create React App
+# Real-Time Social Media Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive social media platform built with React.js and Node.js, featuring real-time updates, user authentication, and interactive social features.
+
+![Social Media App Preview](https://via.placeholder.com/800x400?text=Social+Media+App+Preview)
+
+## ✨ Features
+
+- 🔐 User Authentication (Signup/Login)
+- 👥 User Profiles and Friend System
+- 💬 Real-time Chat and Notifications
+- 📱 Responsive Design for all devices
+- 📱 News Feed with Live Updates
+- ⚡ Optimized Performance with React
+- 🔄 Real-time Updates with WebSockets
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm (v6 or later) or yarn
+- MongoDB (for the backend database)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/HarshithMuramalla/Real-Time-Social-Media-Web-Application-.git
+   cd Real-Time-Social-Media-Web-Application
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # Install client dependencies
+   npm install
+   
+   # Install server dependencies
+   cd Server
+   npm install
+   cd ..
+   ```
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory with the following variables:
+   ```
+   REACT_APP_API_URL=http://localhost:5000
+   ```
+   
+   Create another `.env` file in the `Server` directory:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   PORT=5000
+   ```
+
+4. **Start the development servers**
+   In the root directory, run:
+   ```bash
+   # Start the frontend
+   npm start
+   
+   # In a new terminal, start the backend
+   cd Server
+   npm start
+   ```
+
+5. **Open your browser**
+   The application will be available at [http://localhost:3000](http://localhost:3000)
+
+## 📱 Features in Detail
+
+### User Authentication
+- Secure JWT-based authentication
+- Protected routes
+- Password hashing
+
+### Social Features
+- Add/remove friends
+- Real-time friend requests
+- User profiles with customizable information
+
+### Real-time Updates
+- Live notifications
+- Instant messaging
+- Real-time post updates
+
+## 🛠️ Built With
+
+- **Frontend**: React.js, React Router, Context API, CSS Modules
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB with Mongoose
+- **Real-time**: Socket.io
+- **Authentication**: JWT (JSON Web Tokens)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Create React App for the project setup
+- All contributors and open-source libraries used
 
 ## Available Scripts
 
@@ -8,11 +108,24 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### `npm run server`
+
+Starts the backend server in development mode with nodemon for automatic restarts.
+
+### `npm run dev`
+
+Runs both the frontend and backend in development mode concurrently.
 
 ### `npm test`
 
@@ -39,32 +152,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 🤝 Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Code Splitting
+## 📞 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Harshith Muramalla - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
 
-### Analyzing the Bundle Size
+Project Link: [https://github.com/HarshithMuramalla/Real-Time-Social-Media-Web-Application-](https://github.com/HarshithMuramalla/Real-Time-Social-Media-Web-Application-)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📝 License
 
-### Making a Progressive Web App
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🙏 Acknowledgments
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Create React App](https://create-react-app.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Socket.IO](https://socket.io/)
+- [MongoDB](https://www.mongodb.com/)
+- [Express](https://expressjs.com/)
